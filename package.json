@@ -30,7 +30,8 @@
     "body-parser": "^1.19.0",
     "express-graphql": "^0.8.0",
     "feathers": "^2.2.4",
-    "graphql": "^14.2.1"
+    "graphql": "^14.2.1",
+    "mongoose": "^5.5.4"
   },
   "devDependencies": {
     "nodemon": "^1.18.11"
