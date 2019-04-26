@@ -1,0 +1,36 @@
+{
+  "name": "graphql-react-event-booking",
+  "version": "1.0.0",
+  "description": "Learning GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Midor2Mid/graphql-react-event-booking.git"
+  },
+  "keywords": [
+    "graphql",
+    "react",
+    "learning",
+    "booking",
+    "event"
+  ],
+  "author": "TQS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Midor2Mid/graphql-react-event-booking/issues"
+  },
+  "homepage": "https://github.com/Midor2Mid/graphql-react-event-booking#readme",
+  "dependencies": {
+    "@feathersjs/feathers": "^3.3.1",
+    "body-parser": "^1.19.0",
+    "feathers": "^2.2.4",
+    "@feathersjs/express": "^1.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
