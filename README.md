@@ -11,3 +11,12 @@ Learning GraphQL
 const express = require('@feathersjs/express');
 const app = express(feathers());;`
   * Trong package.json thêm: "@feathersjs/express": "^1.2.3", và npm i
+ # Buổi 2: Use graphQL
+* npm install --save express-graphql graphql
+  * express-graphql: GraphQL package can be used as a middleware in express, allow us to point at schema at resolvers and automatically connect all of that, route requests to a parser and handle them according to schema and forward them to the resolvers.
+  * graphql: allow us to define the schema and setup a schema that follows the official graphQL specification and definition that will give us a valid schema. Parse our schema and convert it and we can then use this parsed.
+* Lưu ý: 
+  * GraphQL, we have only one endpoint to which all requests are sent. (/graphql).
+  * events matches events (rootValue).
+  * resolver là 1 function.
+  * graphiql: true => special URL we can visit: User Interface.
