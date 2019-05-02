@@ -39,3 +39,8 @@ const app = express(feathers());;`
   * result._doc._id.toString() 
   * _id: event.id (.id là phương thức có sẵn)
 * Lưu ý: Cách import { /module/}  = required('//'): Import chỉ 1 module có tên tương ứng trong required [import trong JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+# Buổi 5: Adding Relations
+* Tạo thêm model user trong /models/user.js
+  * model này có field password => không thể lưu password dưới dạng plain text để chống hack => 
+* Lưu ý: 
+  * Hiện tại model User sử dụng collection users trùng với users trong kpitest nên sẽ yêu cầu email unique (mặc dù trong project này không kiểm tra field email)
