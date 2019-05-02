@@ -38,3 +38,4 @@ const app = express(feathers());;`
 * _id là field của mongodb, do đó GraphQL có thể sẽ không hiểu, ta có thể chuyển thành String bằng cách: 
   * result._doc._id.toString() 
   * _id: event.id (.id là phương thức có sẵn)
+* Lưu ý: Cách import { /module/}  = required('//'): Import chỉ 1 module có tên tương ứng trong required [import trong JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
