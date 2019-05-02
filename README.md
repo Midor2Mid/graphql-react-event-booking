@@ -35,3 +35,6 @@ const app = express(feathers());;`
   * `...` spread operator => chuyển chuỗi thành nhiều arguments (trong trường hợp gọi với hàm) hoặc thành nhiều phần tử (cho array).
   * `._doc` property được cung cấp bởi mongoose trả về các thuộc tính (properties) của document hay object không bao gồm metadata.
 * Lưu ý: nên thêm return trước `event.save()` => `return event.save()` để GraphQL Express, GraphQL biết resolver này thực thi một async operation ở cuối cùng và sẽ chờ cho nó chạy xong. Nếu không nó sẽ thực thi ngay lập tức và không nhận được giá trị hợp lệ trả về.
+* _id là field của mongodb, do đó GraphQL có thể sẽ không hiểu, ta có thể chuyển thành String bằng cách: 
+  * result._doc._id.toString() 
+  * _id: event.id (.id là phương thức có sẵn)
